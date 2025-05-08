@@ -1,0 +1,592 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: poppins;
+}
+body {
+  background-color: #fdfdfd;
+}
+.section-padding {
+  padding: 100px 0;
+}
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+}
+.carousel-caption {
+  bottom: 220px;
+  z-index: 2;
+}
+.carousel-caption h5 {
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+}
+.carousel-inner:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.navbar-nav a {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.w-100 {
+  height: 100vh;
+}
+#top5 {
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 60px;
+}
+#tag {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+#section-swipe {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.swiper {
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 40px;
+}
+
+.swiper-slide {
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  filter: blur(1px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+}
+
+.swiper-slide-active {
+  filter: blur(0px);
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #45832d;
+}
+
+.swiper-slide span {
+  text-transform: uppercase;
+  color: #fff;
+  background: #1b7402;
+  padding: 7px 18px 7px 25px;
+  display: inline-block;
+  border-radius: 0 20px 20px 0px;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-family: "Poppins";
+}
+.swiper-slide h2 {
+  color: #fff;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  padding: 25px 45px 0 25px;
+}
+
+.swiper-slide p {
+  color: #fff;
+  font-family: "Poppins";
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  padding: 0 25px 35px 25px;
+}
+
+.swiper-slide svg {
+  color: #fff;
+  width: 22px;
+  height: 22px;
+  margin-right: 7px;
+}
+
+.swiper-slide--one {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(assets/Wisata/KedungCinet.jpg) no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--two {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(assets/Wisata/AirTerjunTretes.webp) no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--three {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(assets/Wisata/CandiRimbi.jpg) no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--four {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(assets/Wisata/BaleTani.jpg) no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--five {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(assets/Wisata/DuranDuren.jpg) no-repeat 50% 50% / cover;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+.kul-slide--one {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(assets/Kuliner/sateslamet.jpg) no-repeat 50% 50% / cover;
+}
+
+.kul-slide--two {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(assets/Kuliner/sotokadar.jpg) no-repeat 50% 50% / cover;
+}
+
+.kul-slide--three {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(assets/Kuliner/baksomama.jpg) no-repeat 50% 50% / cover;
+}
+
+.kul-slide--four {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(assets/Kuliner/butris.jpg) no-repeat 50% 50% / cover;
+}
+
+.kul-slide--five {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(assets/Kuliner/peceldjiah.jpg) no-repeat 50% 50% / cover;
+}
+
+#persuasif .card-img-overlay{
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 10%;
+    margin-left:4%;
+}
+/* ini buat responsif*/
+@media only screen and(min-width:768px) and (max-width: 991px) {
+  .carousel-caption {
+    bottom: 370px;
+  }
+  .carousel-caption {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .carousel-caption {
+    bottom: 125px;
+  }
+  .carousel-caption h5 {
+    font-size: 17px;
+  }
+  .carousel-caption a {
+    padding: 10px 15px;
+  }
+  .carousel-caption p {
+    width: 100px;
+    line-height: 1.6;
+    font-size: 12px;
+  }
+}
+
+.breadcrumb {
+  padding: 0.5rem 0rem;
+  margin-top: 1rem; 
+  margin-bottom: 1rem; 
+  
+.card-custom {
+  width: 18rem;
+  margin-bottom: px;
+}
+}
+/* layla*/
+.card-custom {
+  width: 18rem;
+  margin-bottom: 10px;
+}
+.col-custom {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.destination {
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.destination .img {
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.destination .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.destination .text {
+  background: #fff;
+  padding: 20px;
+  position: relative;
+}
+
+.destination .rate i {
+  color: #ffc107;
+}
+
+.destination .rate i.icon-star-o {
+  color: #ddd;
+}
+
+.destination .price {
+  color: #45832D;
+  font-weight: bold;
+}
+
+.bottom-area {
+  align-items: center;
+}
+
+.bottom-area .ml-auto a {
+  color: #45832D;
+  text-decoration: none;
+}
+.two h3 {
+  font-size: 1.25rem;
+  line-height: 1.2; 
+}
+/* layla */
+.nav-profile-img {
+  width: 32px; 
+  height: 32px; 
+  overflow: hidden; 
+  border: 1px solid transparent; 
+}
+
+.nav-profile-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-profile-img img:hover {
+  transform: scale(1.1); 
+  border-color: black; 
+}
+
+
+body {
+  padding-top: 70%; 
+}
+
+
+.navbar {
+  margin-top: 0px; 
+}
+
+
+.nav-item.dropdown .dropdown-menu {
+  margin-top: 10px; 
+  z-index: 1000; 
+}
+
+/*  CSS Contact Form */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Outfit';
+  background: linear-gradient(#ffffff, #fdfdfd);
+}
+
+.contact-container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-left{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.contact-left-title h2{
+  color: black;
+  font-size: 30px;
+  margin-bottom: 2px;
+}
+
+.contact-left-title hr{
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: #a363aa;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Contact Input Styles */
+.contact-inputs {
+  width: 400px;
+  height: 50px;
+  border: 2px solid #ccc;  /* Added border */
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+  transition: border-color 0.3s;  /* Smooth transition for border color */
+}
+
+.contact-inputs:focus {
+  border-color: #45832d;  /* Change border color on focus */
+}
+
+.contact-left textarea {
+  height: 140px;
+  width: 400px;
+  padding: 15px;
+  border-radius: 20px;
+  border: 2px solid #ccc;  /* Added border */
+  color: #666;
+  outline: none;
+  transition: border-color 0.3s;  /* Smooth transition for border color */
+}
+
+.contact-left textarea:focus {
+  border-color: #45832d;  /* Change border color on focus */
+}
+
+
+.contact-inputs:focus{
+  border: 2px solid #ff994f;
+}
+
+.contact-inputs::placeholder{
+  color: #a9a9a9;
+}
+
+.contact-left button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(270deg, #008000, #008000);
+  cursor: pointer;
+  margin-top: 25px
+}
+
+.contact-left button img{
+  height: 15px;
+}
+
+.contact-right img{
+  width: 500px;
+}
+
+@media (max-width:800px){
+  .contact-inputs{
+    width: 80vw;
+  }
+  .contact-right{
+    display: none;
+  }
+}
+
+/* CSS Tim Pengembang */
+
+.team-section {
+  padding: 80px 0;
+  background-color: #f8f8f8;
+  margin-bottom: 80px;
+}
+
+.team-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.team-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.team-member {
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team-member-image-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%; /* This creates a 1:1 aspect ratio */
+  position: relative;
+}
+
+.team-member-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-member-name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #333;
+}
+
+.team-member-info {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+ /* General Styles */
+ body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Section Styling */
+.our-values {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #ffffff, #ffffff);
+  color: white;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Value Cards */
+.values {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.value-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px;
+  transition: transform 0.3s;
+  width: 350px;
+  text-align: left;
+}
+
+.value-card:hover {
+  transform: scale(1.05);
+}
+
+.value-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.value-content {
+  padding: 20px;
+}
+
+.value-content h2 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.value-content p {
+  font-size: 16px;
+  color: #666;
+}
